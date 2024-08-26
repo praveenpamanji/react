@@ -43,7 +43,7 @@ const App =()=>{
   <SecondaryHeading heading=" iam naveen">iam geetha</SecondaryHeading>
   <CustomImage></CustomImage>
   <CustomOrderedList></CustomOrderedList>
-  <
+  
     </>
   )
 }
