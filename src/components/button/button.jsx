@@ -1,6 +1,24 @@
-const Button=()=>{
+// const Button=()=>{
+//     return(
+//         <button onClick={()=>{}}>click</button>
+//     )
+// }
+// export default Button
+
+
+
+
+const CustomButton =(prop)=>{
+    const {text="praveen",onPress=()=>{},bgColor="green"}=prop
+    const buttonText="Click me" 
     return(
-        <button onClick={()=>{}}>click</button>
+        <button style={{backgroundColor:bgColor}}  onClick={onPress} >{text}</button>
     )
 }
-export default Button
+
+export default CustomButton
+
+
+
+
+

@@ -1,27 +1,59 @@
 
-import Unorderedlist from "./components/list/list.jsx"
-import { Orderedlist } from "./components/list/list.jsx"
-import First from "./components/headings/First.jsx"
-import { Second } from "./components/headings/First.jsx"
-import Image from "./components/images/images.jsx"
-import Button from "./components/button/button.jsx"
 
-const Customlist=()=>{
+import CustomList from "./components/list/list.jsx"
+import { CustomOrderedList } from "./components/list/list.jsx"
+import { SecondaryHeading } from "./components/headings/First.jsx"
+import CustomImage from "./components/images/images"
+import CustomButton from "./components/button/button"
+import MainHeading from "./components/headings/First.jsx"
+import { recipeData } from "./components/data/recipeData.js"
+import button from "./components/button/button.jsx"
+
+
+const App =()=>{
+
+  
   return(
-    <div>
-    <h1>praveen</h1>
-    <Image></Image>
-    <Button></Button>
+    < >
+  {/* {
+    recipeData.map(eachRecipe=>{
+      return(
+        <div key={eachRecipe.id} >
+         
+          <MainHeading heading={eachRecipe.name}   />
+          <CustomImage source={eachRecipe.image} width={200}  height={200}/>
+          <SecondaryHeading heading={"ingredients required"}  />
+          <CustomList list={eachRecipe.ingredients}  />
+          <SecondaryHeading heading={"instructions required"}  />
+          <CustomList list={eachRecipe.instructions}  />
+          <CustomButton  text={"Start preparation"}   />
+        </div>
+      )
+    })
 
-    <First></First>
-    <Image></Image>
-    <Second></Second>
-    <Unorderedlist/>
-    <Orderedlist></Orderedlist>
-    <Unorderedlist></Unorderedlist>
-    <Orderedlist></Orderedlist>
-
-    </div>
+  } */}
+  <CustomButton></CustomButton>
+  <MainHeading heading="iam praveen">iam swathi</MainHeading>
+  <SecondaryHeading heading=" iam naveen">iam geetha</SecondaryHeading>
+  <CustomButton></CustomButton>
+  <MainHeading heading="iam praveen">iam swathi</MainHeading>
+  <SecondaryHeading heading=" iam naveen">iam geetha</SecondaryHeading>
+  <CustomButton></CustomButton>
+  <MainHeading heading="iam praveen">iam swathi</MainHeading>
+  <SecondaryHeading heading=" iam naveen">iam geetha</SecondaryHeading>
+  <CustomImage></CustomImage>
+  <CustomOrderedList></CustomOrderedList>
+  <
+    </>
   )
 }
-export default Customlist
+
+export default App
+
+
+
+
+
+
+
+
