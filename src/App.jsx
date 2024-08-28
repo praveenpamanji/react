@@ -1,50 +1,36 @@
-
-
-import CustomList from "./components/list/list.jsx"
-import { CustomOrderedList } from "./components/list/list.jsx"
-import { SecondaryHeading } from "./components/headings/First.jsx"
-import CustomImage from "./components/images/images"
-import CustomButton from "./components/button/button"
+import Counter from "./components/class/counter.jsx"
+import Youtubebutton from "./components/class/youtube-button.jsx"
 import MainHeading from "./components/headings/First.jsx"
-import { recipeData } from "./components/data/recipeData.js"
-import button from "./components/button/button.jsx"
+import Count1 from "./components/Hook/usestate/usestate switch.jsx"
+import Count from "./components/Hook/usestate/usestate.jsx"
+import CustomList, { CustomOrderedList } from "./components/list/list.jsx"
+import Mounting from "./components/Mounting/Mounting.jsx"
+import Parent from "./components/parent/parent.jsx"
+import Praveen from "./components/praveen/praveen"
+import Axios from "./components/Recipe-listing/axios.jsx"
+import Reciepelisting from "./components/Recipe-listing/reciepelisting"
+
+
+
+
 
 
 const App =()=>{
 
+ 
+
   
   return(
     < >
-  {/* {
-    recipeData.map(eachRecipe=>{
-      return(
-        <div key={eachRecipe.id} >
-         
-          <MainHeading heading={eachRecipe.name}   />
-          <CustomImage source={eachRecipe.image} width={200}  height={200}/>
-          <SecondaryHeading heading={"ingredients required"}  />
-          <CustomList list={eachRecipe.ingredients}  />
-          <SecondaryHeading heading={"instructions required"}  />
-          <CustomList list={eachRecipe.instructions}  />
-          <CustomButton  text={"Start preparation"}   />
-        </div>
-      )
-    })
-
-  } */}
-  <CustomButton></CustomButton>
-  <MainHeading heading="iam praveen">iam swathi</MainHeading>
-  <SecondaryHeading heading=" iam naveen">iam geetha</SecondaryHeading>
-  <CustomButton></CustomButton>
-  <MainHeading heading="iam praveen">iam swathi</MainHeading>
-  <SecondaryHeading heading=" iam naveen">iam geetha</SecondaryHeading>
-  <CustomButton></CustomButton>
-  <MainHeading heading="iam praveen">iam swathi</MainHeading>
-  <SecondaryHeading heading=" iam naveen">iam geetha</SecondaryHeading>
-  <CustomImage></CustomImage>
-  <CustomOrderedList></CustomOrderedList>
-  
-    </>
+   {/* <Youtubebutton></Youtubebutton>
+   <Praveen></Praveen>
+   {/* <Reciepelisting></Reciepelisting>
+  */}
+  {/* <Axios></Axios> */}
+  {/* <Mounting color="red"/>
+  <Parent></Parent> */}
+  <Count1></Count1>
+  </>
   )
 }
 
